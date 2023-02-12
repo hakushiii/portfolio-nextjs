@@ -3,7 +3,7 @@ import { forwardRef } from 'react'
 import NextLink from 'next/link'
 import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
-import { IoLogoGithub } from 'react-icons/io5'
+import { IoBookmark, IoBug, IoLogoGithub } from 'react-icons/io5'
 import ThemeButton from './themebutton'
 
 const LinkItem = ({ href, path, children, ...props }) => {
@@ -23,11 +23,7 @@ const LinkItem = ({ href, path, children, ...props }) => {
         {children}
     </Link>
   )
-}  
-
-const MenuLink = forwardRef((props, ref) => (
-    <Link ref={ref} as={NextLink} {...props} />
-  ))
+}
 
 const Navbar = props => {
     const { path } = props
@@ -36,8 +32,8 @@ const Navbar = props => {
         <Box position='fixed'
         as='nav'
         w='100%'
-        bg={useColorModeValue('#ffffff40','#12121260')}
-        style={{backdropFilter:'blur(5px)'}}
+        bg={useColorModeValue('#C7DEFA80','#12121260')}
+        style={{backdropFilter:'blur(2px)'}}
         zIndex={1}
         {...props}>
             <Container display='flex' p={2} maxW='container.md' alignItems='center' justifyItems='space-between'>
@@ -54,22 +50,21 @@ const Navbar = props => {
                     alignItems='center'
                     flexGrow={1}
                     mt={{ base: 4, md: 0 }}>
-                    <LinkItem href='/works' path={path}>
+                    <LinkItem href='/works' path={path} display='inline-flex'>
+                        <IoBookmark />
                         Works
                     </LinkItem>
-                    <LinkItem href='/posts' path={path}>
-                        Posts
-                    </LinkItem>
-                    <LinkItem href='/tools' path={path}>
+                    <LinkItem href='/tools' path={path} display='inline-flex'>
+                        <IoBug />
                         What I Use
                     </LinkItem>
-                    <LinkItem href='https://www.github.com/jeromealapad13' path={path} target='' display='inline-flex'>
+                    <LinkItem href='https://www.github.com/jeromealapad13' path={path} display='inline-flex'>
                         <IoLogoGithub />
                         GITHUB
                     </LinkItem>
                 </Stack>
 
-                <Box flex={1} align='right'>
+                <Box>
                     <ThemeButton />
 
                     <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -81,16 +76,13 @@ const Navbar = props => {
                                 aria-label="Options"/>
                             <MenuList
                                 verticalAlign='true'>
-                                <MenuItem as={MenuLink} href="/">
+                                <MenuItem as={NextLink} href="/">
                                     About
                                 </MenuItem>
-                                <MenuItem as={MenuLink} href="/works">
+                                <MenuItem as={NextLink} href="/works">
                                     Works
                                 </MenuItem>
-                                <MenuItem as={MenuLink} href="/posts">
-                                    Posts
-                                </MenuItem>
-                                <MenuItem as={MenuLink} href="/tools">
+                                <MenuItem as={NextLink} href="/tools">
                                     What I Use
                                 </MenuItem>
                                 <MenuItem
