@@ -1,5 +1,5 @@
-import Chakra from "components/chakra"
-import Layout from "../components/layouts/main"
+import Chakra from 'components/chakra'
+import Layout from '../components/layouts/main'
 
 const Website = ({ Component, pageProps, router }) => {
   return(

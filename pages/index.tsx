@@ -1,17 +1,18 @@
-import { Container, Box, Heading, useColorModeValue} from "@chakra-ui/react"
+import { Container, Box, Heading, useColorModeValue} from '@chakra-ui/react'
+import Head from 'next/head'
 
-const Page=()=> {
+const Page= () => {
   return <Container>
-    <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>
-      Hello, I am Junior Software Developer called HKSH/Z3N_
+    <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>  
+      01001000 01001011 01010011 01001000
     </Box>
     
-    <Box display={{md:"flex"}}>
+    <Box display={{md:'flex'}}>
       <Box flexGrow={1}>
         <Heading as='h2' variant='page-title'>
-          HKSH / Z3N_
+          Jerome A.
         </Heading>
-        <p>Computer Engineer / Software Developer</p>
+        Computer Engineer / Software Developer
       </Box>
     </Box>
   </Container>
