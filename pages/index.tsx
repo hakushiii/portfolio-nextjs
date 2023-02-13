@@ -30,27 +30,39 @@ const Page= () => {
         </Box>
       </Box>
     </Box>
-    <Section delay={0.1}>
-      <Heading as='h3' variant='section-title'>
-      WORK
-      </Heading>
-      <p>
-        Haven't worked yet. Currently had University projects though.
-      </p>
-    </Section>
-    <Section delay={0.1}>
-      <Heading as='h3' variant='section-title'>
-      BIO
-      </Heading>
-      <BioSection>
-        <BioYear>2000</BioYear>
-        Born in the PH Server
-      </BioSection>
-      <BioSection>
-        <BioYear>2019 - 20XX</BioYear>
-        Started University taking Bachelor of Science in Computer Engineering
-      </BioSection>
-    </Section>
+    <Box borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={5} mt={6}>
+      <Section delay={0.5}>
+        <Heading as='h3' variant='section-title'>
+        WORK
+        </Heading>
+        <p>
+          Haven't worked yet. Currently had University projects though.
+        </p>
+      </Section>
+      <Section delay={0.5}>
+        <Heading as='h3' variant='section-title'>
+        BIO
+        </Heading>
+        <BioSection>
+          <BioYear>2000</BioYear>
+          Born in the PH Server
+        </BioSection>
+        <BioSection>
+          <BioYear>2019 - 20XX</BioYear>
+          Started University taking Bachelor of Science in Computer Engineering
+        </BioSection>
+      </Section>
+      <Section delay={0.5}>
+        <Heading variant='section-title'>
+          SNS
+        </Heading>
+        <ul>
+          <li>SNS1</li>
+          <li>SNS2</li>
+          <li>SNS3</li>
+        </ul>
+      </Section>
+    </Box>
   </Container>)
 } 
 
