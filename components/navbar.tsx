@@ -1,11 +1,19 @@
-import Logo from './logo'
+import { FC } from  'react'
 import NextLink from 'next/link'
 import { Container, Box, Link, Stack, Heading, Flex, Menu, MenuItem, MenuList, MenuButton, IconButton, useColorModeValue } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import { IoBookmark, IoBug, IoLogoGithub } from 'react-icons/io5'
+import Logo from './logo'
 import ThemeButton from './themebutton'
 
-const LinkItem = ({ href, path, children, ...props }) => {
+interface LinkItemProps {
+    href: string;
+    path?: {};
+    children: any;
+    display: string;
+}
+
+const LinkItem:FC<LinkItemProps> = ({ href, path, children, ...props }) => {
     const active = path === href
     const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
 
@@ -24,7 +32,11 @@ const LinkItem = ({ href, path, children, ...props }) => {
   )
 }
 
-const Navbar = props => {
+interface NavBarProps {
+    path: {};
+}
+
+const Navbar:FC<NavBarProps> = props => {
     const { path } = props
 
     return(

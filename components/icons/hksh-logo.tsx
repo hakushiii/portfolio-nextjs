@@ -1,4 +1,6 @@
-const HkshIcon = props => {
+import { FC } from 'react'
+
+const HkshIcon:FC = props => {
 return(
     <svg
     viewBox='0 0 2000 1126'

@@ -1,9 +1,15 @@
+import { FC } from 'react'
 import Head from 'next/head'
 import { Box, Container } from '@chakra-ui/react'
 import Navbar from '../navbar'
 import Footer from 'components/footer'
 
-const Main = ({ children, router }) => {
+interface MainProps {
+    children?: JSX.Element|JSX.Element[];
+    router:any;
+}
+
+const Main:FC<MainProps> = ({ children, router }) => {
     return(
         <Box as='main' pb={10}>
             <Head>

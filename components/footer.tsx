@@ -1,11 +1,12 @@
+import { FC } from 'react'
 import { Box, Link, Text, useColorModeValue } from "@chakra-ui/react"
 
-const Footer = props => {
+const Footer:FC = props => {
     return(
         <Box
         mt={18}
         bottom='0'
-        align='center'
+        textAlign='center'
         w='100%'
         style={{backdropFilter:'blur(2px)'}}
         zIndex={1}

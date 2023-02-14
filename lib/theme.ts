@@ -1,8 +1,9 @@
+import { FC } from 'react'
 import { extendTheme } from '@chakra-ui/react'
-import { mode } from '@chakra-ui/theme-tools'
+import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 
 const styles = {
-    global: props => ({
+    global: (props: Record<string, any> | StyleFunctionProps) => ({
         body: {
             bg: mode('#D8F0FA', '#121212')(props)
         }
@@ -34,7 +35,7 @@ const components = {
     }
   },
   Link: {
-    baseStyle: props => ({
+    baseStyle: (props: Record<string, any> | StyleFunctionProps) => ({
       color: mode('#3d7aed', '#ff63c3')(props),
       textUnderlineOffset: 3
     })
