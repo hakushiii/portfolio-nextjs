@@ -1,14 +1,16 @@
-import { Container, Box, Heading, useColorModeValue, Image } from '@chakra-ui/react'
+import { Container, Box, Heading, useColorModeValue, Image, HStack } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection,BioYear } from 'components/bio'
+import TWFeed from 'components/twitterfeed'
 
-const Page= () => {
+const Page = () => {
   return (
+  <div>
   <Container>
+    <br /><br /><br /><br />
     <Box borderRadius='lg' bg={useColorModeValue('teal.200', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>  
       01001000 01001011 01010011 01001000
     </Box>
-    
     <Box display={{md:'flex'}}>
       <Box flexGrow={1}>
         <Heading as='h2' variant='page-title'>
@@ -56,14 +58,20 @@ const Page= () => {
         <Heading variant='section-title'>
           SNS
         </Heading>
-        <ul>
-          <li>SNS1</li>
-          <li>SNS2</li>
-          <li>SNS3</li>
-        </ul>
+        <BioSection>
+          <p></p>
+          <a href='https://www.linkedin.com/in/jerome-christian-alapad-3547631b7/'>LINKEDIN</a><br />
+          <a href='https://www.github.com/jeromealapad13'>GITHUB</a><br />
+          <a href=''></a>SNS2<br />
+          SNS3
+        </BioSection>
       </Section>
     </Box>
-  </Container>)
+  </Container>
+  <HStack>
+  <TWFeed />
+  </HStack>
+  </div>)
 } 
 
 export default Page

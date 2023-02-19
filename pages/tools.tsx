@@ -4,7 +4,7 @@ import Section from 'components/section'
 const Tools = () => {
     return(
         <Box>
-            <Heading mt={3}>
+            <Heading my={3}>
                     TOOLS THAT I USE
             </Heading>
             <Heading variant='tools-title'>
