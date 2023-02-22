@@ -1,11 +1,25 @@
-import { Container, Box, Heading, useColorModeValue, Image, HStack } from '@chakra-ui/react'
+import { Container, Box, Heading, useColorModeValue, Image, Flex, Spacer, Stack } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection,BioYear } from 'components/bio'
 import TWFeed from 'components/twitterfeed'
 
 const Page = () => {
   return (
-  <div>
+  <Flex>
+    
+  <Stack direction={{ base: 'column', md: 'row' }}
+                  display={{ base: 'none', md: 'flex' }}
+                  width={{ base: 'full', md: 'auto' }}
+                  flexGrow={1}
+                  mx={2}
+                  mt={{ base: 4, md: 0 }}>
+    <Box maxWidth={300}>
+
+    </Box>
+  </Stack>
+    
+  <Spacer />
+
   <Container>
     <br /><br /><br /><br />
     <Box borderRadius='lg' bg={useColorModeValue('teal.200', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>  
@@ -66,12 +80,21 @@ const Page = () => {
           SNS3
         </BioSection>
       </Section>
-    </Box>
+    </Box>  
   </Container>
-  <HStack>
-  <TWFeed />
-  </HStack>
-  </div>)
+  
+  <Stack 
+                    display={{ base: 'none', md: 'flex' }}
+                    width={{ base: 'full', md: 'auto' }}
+                    flexGrow={1}
+                    mx={2}
+                    mt={{ base: 4, md: 0 }}>
+    <br /><br /><br /><br />
+    <TWFeed/>
+  </Stack>
+
+  </Flex>
+  )
 } 
 
 export default Page

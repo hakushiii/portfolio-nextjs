@@ -4,7 +4,7 @@ import Script from "next/script"
 
 const TWFeed:FC = () => {
     return (
-        <Box mx={3} my={3} p={2} borderRadius='md' bg={useColorModeValue('white','black')}>
+        <Box p={3} w={330} mx={3} my={3} borderRadius='md' bg={useColorModeValue('white','black')}>
             <a className="twitter-timeline" 
             data-width="300" data-height="600" 
             data-theme={useColorModeValue('light','dark')} data-chrome='noscrollbar noborders'
