@@ -88,9 +88,11 @@ const Page = () => {
                     width={{ base: 'full', md: 'auto' }}
                     flexGrow={1}
                     mx={2}
-                    mt={{ base: 4, md: 0 }}>
-    <br /><br /><br /><br />
-    <TWFeed/>
+                    mt={{ base: 0.5, md: 0  }}>
+    <Flex>
+      <Box w={1} height='auto' bgColor={useColorModeValue('teal.500', 'whiteAlpha.500')}/>
+      <TWFeed/>
+    </Flex>
   </Stack>
 
   </Flex>
