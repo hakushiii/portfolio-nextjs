@@ -3,8 +3,10 @@ import Section from 'components/section'
 
 const Tools = () => {
     return(
+    <Container>
         <Box>
-            <Heading my={3}>
+            <br /><br /><br />
+            <Heading>
                     TOOLS THAT I USE
             </Heading>
             <Heading variant='tools-title'>
@@ -102,6 +104,7 @@ const Tools = () => {
                 </Box>
             </Flex>
         </Box>
+    </Container>
     )
 }
 export default Tools

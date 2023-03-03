@@ -3,8 +3,10 @@ import Section from 'components/section'
 
 const Works = () => {
     return(
+        <Container>
         <Box>
-            <Heading my={3}>
+        <br /><br /><br />
+            <Heading>
                     WORKS
             </Heading>
             <Flex>
@@ -19,6 +21,7 @@ const Works = () => {
             </Section>
             </Flex>
         </Box>
+        </Container>
     )
 }
 export default Works
