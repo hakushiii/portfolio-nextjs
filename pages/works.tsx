@@ -1,9 +1,13 @@
 import { Box, Container, Flex, Image, Heading, useColorModeValue } from '@chakra-ui/react'
+import Head from 'next/head'
 import Section from 'components/section'
 
 const Works = () => {
     return(
-        <Container>
+    <Container>
+        <Head>
+            <title>HKSH - Works</title>
+        </Head>
         <Box>
         <br /><br /><br />
             <Heading>
@@ -21,7 +25,7 @@ const Works = () => {
             </Section>
             </Flex>
         </Box>
-        </Container>
+    </Container>
     )
 }
 export default Works

@@ -1,9 +1,13 @@
 import { Box, Container, Flex, Heading, Image, useColorModeValue, Text } from '@chakra-ui/react'
+import Head from 'next/head'
 import Section from 'components/section'
 
 const Tools = () => {
     return(
     <Container>
+        <Head>
+            <title>HKSH - Tools</title>
+        </Head>
         <Box>
             <br /><br /><br />
             <Heading>

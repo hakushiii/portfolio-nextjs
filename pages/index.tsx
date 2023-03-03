@@ -75,7 +75,7 @@ const Page = () => {
         <BioSection>
           <p></p>
           <a href='https://www.linkedin.com/in/jerome-christian-alapad-3547631b7/'>LINKEDIN</a><br />
-          <a href='https://www.github.com/jeromealapad13'>GITHUB</a><br />
+          <a href='https://www.github.com/hakushiii'>GITHUB</a><br />
           <a href=''></a>SNS2<br />
           SNS3
         </BioSection>
