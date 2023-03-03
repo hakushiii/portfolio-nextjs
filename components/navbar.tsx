@@ -44,7 +44,7 @@ const Navbar:FC<NavBarProps> = props => {
         as='nav'
         w='100%'
         bg={useColorModeValue('#C7DEFA80','#12121260')}
-        style={{backdropFilter:'blur(2px)'}}
+        css={{backdropFilter:'blur(2px)'}}
         zIndex={1}
         {...props}>
             <Container display='flex' p={2} maxW='container.md' alignItems='center' justifyItems='space-between'>
