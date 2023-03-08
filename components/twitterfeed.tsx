@@ -4,7 +4,7 @@ import Script from "next/script"
 
 const TWFeed:FC = () => {
     return (
-        <Container>
+        <Box>
             <br /><br /><br /><br />
             <Box p={3} w={330} mx={3} borderRadius='lg' bg={useColorModeValue('white','black')}>
                 <a className="twitter-timeline" 
@@ -13,7 +13,7 @@ const TWFeed:FC = () => {
                 href="https://twitter.com/hakushiii_">Tweets from hakushiii_</a> 
                 <Script async src="https://platform.twitter.com/widgets.js"></Script>
             </Box>
-        </Container>
+        </Box>
         
     )
 }

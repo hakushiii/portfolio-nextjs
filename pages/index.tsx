@@ -16,10 +16,9 @@ const Page = () => {
     <Box maxWidth={300}>
 
     </Box>
+    <Spacer />
   </Stack>
-    
-  <Spacer />
-
+  
   <Container>
     <br /><br /><br /><br />
     <Box borderRadius='lg' bg={useColorModeValue('teal.200', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>  
