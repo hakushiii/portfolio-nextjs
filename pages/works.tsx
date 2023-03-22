@@ -4,19 +4,19 @@ import Section from 'components/section'
 
 const Works = () => {
     return(
-    <Container>
+    <Box mx={200}>
         <Head>
             <title>HKSH - Works</title>
         </Head>
         <Box>
-        <br /><br /><br />
+            <br /><br /><br />
             <Heading>
                     WORKS
             </Heading>
-            <Flex>
+            <Flex justifyContent='center'>
             <Section>
                 <Box mx={3} my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>
-                    <Image my={2} borderRadius='lg' 
+                    <Image h={400} my={2} borderRadius='lg' 
                            alt='library repo'
                            src='/images/library.png'
                     />
@@ -25,7 +25,7 @@ const Works = () => {
             </Section>
             </Flex>
         </Box>
-    </Container>
+    </Box>
     )
 }
 export default Works
