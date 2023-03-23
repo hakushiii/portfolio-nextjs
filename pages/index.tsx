@@ -1,24 +1,10 @@
-import { Container, Box, Heading, useColorModeValue, Image, Flex, Spacer, Stack } from '@chakra-ui/react'
+import { Container, Box, Heading, useColorModeValue, Image, Grid, GridItem } from '@chakra-ui/react'
 import Section from '../components/section'
 import { BioSection,BioYear } from 'components/bio'
-import TWFeed from 'components/twitterfeed'
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from 'react-icons/io5'
 
 const Page = () => {
   return (
-  <Flex>
-    
-  <Stack direction={{ base: 'column', md: 'row' }}
-                  display={{ base: 'none', md: 'flex' }}
-                  width={{ base: 'full', md: 'auto' }}
-                  flexGrow={1}
-                  mx={2}
-                  mt={{ base: 4, md: 0 }}>
-    <Box maxWidth={300}>
-
-    </Box>
-    <Spacer />
-  </Stack>
-  
   <Container>
     <br /><br /><br /><br />
     <Box borderRadius='lg' bg={useColorModeValue('teal.200', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>  
@@ -71,30 +57,15 @@ const Page = () => {
         <Heading variant='section-title'>
           SNS
         </Heading>
-        <BioSection>
-          <p></p>
-          <a href='https://www.linkedin.com/in/jerome-christian-alapad-3547631b7/'>LINKEDIN</a><br />
-          <a href='https://www.github.com/hakushiii'>GITHUB</a><br />
-          <a href=''></a>SNS2<br />
-          SNS3
-        </BioSection>
+        <Grid templateColumns='repeat(5, 1fr)'>
+          <GridItem colStart={1} colEnd={2} ><a href='https://www.linkedin.com/in/jerome-christian-alapad-3547631b7/'><IoLogoLinkedin size='100%' /></a></GridItem>
+          <GridItem colStart={3} colEnd={4} ><a href='https://www.github.com/hakushiii'><IoLogoGithub size='100%' /></a></GridItem>
+          <GridItem colStart={5} colEnd={6} ><a href='https://www.github.com/hakushiii'><IoLogoTwitter size='100%' /></a></GridItem>
+        </Grid>
+
       </Section>
     </Box>  
   </Container>
-  
-  <Stack 
-                    display={{ base: 'none', md: 'flex' }}
-                    width={{ base: 'full', md: 'auto' }}
-                    flexGrow={1}
-                    mx={2}
-                    mt={{ base: 0.5, md: 0  }}>
-    <Flex>
-      <Box w={1} height='auto'  bgColor={useColorModeValue('teal.500', 'whiteAlpha.500')}/>
-      <TWFeed />
-    </Flex>
-  </Stack>
-
-  </Flex>
   )
 } 
 
