@@ -16,7 +16,7 @@ const Works = () => {
             <Flex justifyContent='center'>
             <Section>
                 <Box mx={3} my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>
-                    <Image h={400} my={2} borderRadius='lg' 
+                    <Image h={400} my={1} borderRadius='lg' 
                            alt='library repo'
                            src='/images/library.png'
                     />

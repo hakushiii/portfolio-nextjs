@@ -17,9 +17,9 @@ const Tools = () => {
                 Devices
             </Heading>
             <Flex justifyContent='center'>
-                <Box mx={3} my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
-                        <Image h={400} mt={2} borderRadius='lg' 
+                        <Image h={400} w={800} borderRadius='lg' 
                                alt='mba m2 midnight' 
                                src='https://cdn.mos.cms.futurecdn.net/wt28Bmfr6mdPyoKdZwCkWf.jpg'
                                />
@@ -33,7 +33,7 @@ const Tools = () => {
                     Peripherals
             </Heading>
             <Flex justifyContent='center'>
-                <Box mx={3} my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
                         <Image h={200} borderRadius='lg' 
                                alt='keychron k3 v2' 
@@ -44,9 +44,9 @@ const Tools = () => {
                         </Heading>
                     </Section>
                 </Box>
-                <Box mx={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
-                        <Image mt={2} h={200} borderRadius='lg' 
+                        <Image h={200} borderRadius='lg' 
                                alt='razer viper pro ult' 
                                src='https://assets3.razerzone.com/6v1RVaYM7gImsVUwGP7AXb6YOcw=/1500x1000/https%3A%2F%2Fhybrismediaprod.blob.core.windows.net%2Fsys-master-phoenix-images-container%2Fh78%2Fh6a%2F9081447088158%2Frazer-viper-ultimate-gallery-hero.jpg'
                                />
@@ -57,9 +57,9 @@ const Tools = () => {
                 </Box>
             </Flex>
             <Flex justifyContent='center'>
-                <Box mx={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
-                        <Image mt={2} h={200} borderRadius='lg' 
+                        <Image h={200} borderRadius='lg' 
                                alt='8bitdo' 
                                src='https://images.idgesg.net/images/article/2021/04/dsc07195_final-100886698-large.jpg'
                                />
@@ -68,9 +68,9 @@ const Tools = () => {
                         </Heading>
                     </Section>
                 </Box>
-                <Box mx={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
-                        <Image mt={2} h={200} borderRadius='lg' 
+                        <Image h={200} borderRadius='lg' 
                                alt='katos' 
                                src='https://images.mmorpg.com/images/heroes/posts/123565.jpg?cb=2E40083E9AACB09D4C80E1FD5AA5E6C0'
                                />
@@ -84,9 +84,9 @@ const Tools = () => {
                     Accessories
             </Heading>
             <Flex justifyContent='center'>
-                <Box mx={3} my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
-                        <Image mt={2} h={200} borderRadius='lg' 
+                        <Image h={200} borderRadius='lg' 
                                alt='UGREEN Hub' 
                                src='https://cdn.shopify.com/s/files/1/0257/5246/9566/files/5640c170-182e-4eb8-9f84-172a95fa49e3.__CR0_0_970_600_PT0_SX970_V1.jpg?v=1658296590'
                                />
@@ -95,9 +95,9 @@ const Tools = () => {
                         </Heading>
                     </Section>
                 </Box>
-                <Box mx={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>  
+                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} textAlign='center'>  
                     <Section>
-                        <Image mt={2} h={200} borderRadius='lg' 
+                        <Image h={200} borderRadius='lg' 
                                alt='yes, dont ask' 
                                src='https://m.media-amazon.com/images/I/41agkgDaUJL._AC_UF894,1000_QL80_.jpg'
                                />

@@ -70,7 +70,7 @@ const Navbar:FC<NavBarProps> = props => {
                         <IoBug />
                         What I Use
                     </LinkItem>
-                    <LinkItem href='https://www.github.com/jeromealapad13' path={path} display='inline-flex'>
+                    <LinkItem href='https://www.github.com/hakushiii' path={path} display='inline-flex'>
                         <IoLogoGithub />
                         GITHUB
                     </LinkItem>

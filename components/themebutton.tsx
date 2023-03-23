@@ -3,7 +3,8 @@ import { IconButton, useColorMode, useColorModeValue } from '@chakra-ui/react'
 import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 const ThemeButton = () => {
-  const { toggleColorMode } = useColorMode()
+
+  const { toggleColorMode } = useColorMode() 
 
   return (
     <AnimatePresence mode='wait' initial={false}>
