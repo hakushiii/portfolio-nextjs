@@ -62,7 +62,6 @@ const Page = () => {
           <GridItem colStart={3} colEnd={4} ><a href='https://www.github.com/hakushiii'><IoLogoGithub size='100%' /></a></GridItem>
           <GridItem colStart={5} colEnd={6} ><a href='https://www.github.com/hakushiii'><IoLogoTwitter size='100%' /></a></GridItem>
         </Grid>
-
       </Section>
     </Box>  
   </Container>

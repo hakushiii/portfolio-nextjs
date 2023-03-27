@@ -8,7 +8,7 @@ const Works = () => {
         <Head>
             <title>HKSH - Works</title>
         </Head>
-        <Box >
+        <Box>
             <br /><br /><br />
             <Heading variant='works-title'>
                     WORKS
@@ -17,14 +17,12 @@ const Works = () => {
                 &lt; L I B R A R Y &gt; EBOOK-REPOSITORY
             </Heading>
             <Flex justifyContent='center'>
-            <Section>
-                <Box my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3}>
-                    <Image h={400} my={1} borderRadius='lg' 
+                <Box my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={2}>
+                    <Image borderRadius='lg' 
                            alt='library repo'
                            src='/images/library.png'
                     />
                 </Box>    
-            </Section>
             </Flex>
         </Box>
     </Box>
