@@ -80,7 +80,7 @@ const Tools = () => {
                     </Section>
                 </Box>
             </Flex>
-            <Heading variant='tools-title'>
+            <Heading variant='tools-section'>
                     Accessories
             </Heading>
             <Flex justifyContent='center'>
