@@ -4,23 +4,25 @@ import Section from 'components/section'
 
 const Works = () => {
     return(
-    <Box mx={200}>
+    <Box mx={300}>
         <Head>
             <title>HKSH - Works</title>
         </Head>
-        <Box>
+        <Box >
             <br /><br /><br />
-            <Heading>
+            <Heading variant='works-title'>
                     WORKS
+            </Heading>
+            <Heading variant='works-item'>
+                &lt; L I B R A R Y &gt; EBOOK-REPOSITORY
             </Heading>
             <Flex justifyContent='center'>
             <Section>
-                <Box mx={3} my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3} textAlign='center'>
+                <Box my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={3}>
                     <Image h={400} my={1} borderRadius='lg' 
                            alt='library repo'
                            src='/images/library.png'
                     />
-                    &lt; L I B R A R Y &gt; EBOOK-REPOSITORY
                 </Box>    
             </Section>
             </Flex>

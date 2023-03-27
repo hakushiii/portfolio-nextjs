@@ -14,6 +14,7 @@ const components = {
   Heading: {
     variants: {
       'section-title': {
+        textAlign: '',
         textDecoration: 'underline',
         fontSize: 24,
         textUnderlineOffset: 6,
@@ -22,10 +23,50 @@ const components = {
         marginTop: 3,
         marginBottom: 4
       },
-      'tools-title': {
+      'tools-title':{
+        textAlign: '',
+        textDecoration: 'underline',
+        fontSize: 24,
+        textUnderlineOffset: 6,
+        textDecorationColor: '#5D3FD3',
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 1
+      },
+      'tools-section': {
+        textAlign: 'center',
+        textDecoration: 'bold',
+        fontSize: 22,
+        textUnderlineOffset: 6,
+        textDecorationColor: '#5D3FD3',
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 1
+      },
+      'tools-item': {
         textAlign: 'center',
         textDecoration: '',
-        fontSize: 20,
+        fontSize: 18,
+        textUnderlineOffset: 6,
+        textDecorationColor: '#ff8800',
+        textDecorationThickness: 4,
+        marginTop: 5,
+        marginBottom: 0
+      },
+      'works-title': {
+        textAlign: '',
+        textDecoration: 'underline',
+        fontSize: 24,
+        textUnderlineOffset: 6,
+        textDecorationColor: '#ff8800',
+        textDecorationThickness: 4,
+        marginTop: 3,
+        marginBottom: 1
+      },
+      'works-item': {
+        textAlign: 'center',
+        textDecoration: '',
+        fontSize: 18,
         textUnderlineOffset: 6,
         textDecorationColor: '#ff8800',
         textDecorationThickness: 4,
