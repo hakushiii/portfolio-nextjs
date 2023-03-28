@@ -17,7 +17,7 @@ const Tools = () => {
                 Devices
             </Heading>
             <Flex justifyContent='center'>
-                <Box my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box my={1} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image borderRadius='lg' 
                                alt='mba m2 midnight' 
@@ -33,7 +33,7 @@ const Tools = () => {
                 Peripherals
             </Heading>
             <Flex justifyContent='center'>
-                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image maxHeight={400} borderRadius='lg' 
                                alt='keychron k3 v2' 
@@ -44,7 +44,7 @@ const Tools = () => {
                         </Heading>
                     </Section>
                 </Box>
-                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image maxHeight={400} borderRadius='lg' 
                                alt='razer viper pro ult' 
@@ -57,7 +57,7 @@ const Tools = () => {
                 </Box>
             </Flex>
             <Flex justifyContent='center'>
-                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image maxHeight={400} borderRadius='lg' 
                                alt='8bitdo' 
@@ -68,7 +68,7 @@ const Tools = () => {
                         </Heading>
                     </Section>
                 </Box>
-                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image maxHeight={400} borderRadius='lg'
                                alt='katos' 
@@ -84,7 +84,7 @@ const Tools = () => {
                 Accessories
             </Heading>
             <Flex justifyContent='center'>
-                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image maxHeight={400} borderRadius='lg' 
                                alt='UGREEN Hub' 
@@ -95,7 +95,7 @@ const Tools = () => {
                         </Heading>
                     </Section>
                 </Box>
-                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')}>  
+                <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                     <Section>
                         <Image maxHeight={400} borderRadius='lg' 
                                alt='yes, dont ask' 

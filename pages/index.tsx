@@ -7,7 +7,7 @@ const Page = () => {
   return (
   <Container>
     <br /><br /><br /><br />
-    <Box borderRadius='lg' bg={useColorModeValue('teal.200', 'whiteAlpha.200')} p={3} mb={6} textAlign='center'>  
+    <Box borderRadius='lg' bg={useColorModeValue('teal.200', 'blackAlpha.800')} p={3} mb={6} textAlign='center'>  
       01001000 01001011 01010011 01001000
     </Box>
     <Box display={{md:'flex'}}>
@@ -31,7 +31,7 @@ const Page = () => {
         </Box>
       </Box>
     </Box>
-    <Box borderRadius='lg' bg={useColorModeValue('cyan.100', '#BEBEBE10')} p={5} mt={6}>
+    <Box borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')} p={5} mt={6}>
       <Section delay={0.5}>
         <Heading as='h3' variant='section-title'>
         WORK

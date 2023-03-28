@@ -1,4 +1,3 @@
-import { FC } from 'react'
 import { extendTheme } from '@chakra-ui/react'
 import { mode, StyleFunctionProps } from '@chakra-ui/theme-tools'
 
@@ -72,6 +71,30 @@ const components = {
         textDecorationThickness: 4,
         marginTop: 3,
         marginBottom: 1
+      }
+    }
+  },
+  Text: {
+    variants: {
+      'work-lang': {
+        textAlign: '',
+        textDecoration: 'underline wavy',
+        fontSize: 22,
+        textUnderlineOffset: 5,
+        textDecorationColor: '#FF0000',
+        textDecorationThickness: 2,
+        marginTop: 3,
+        marginBottom: 4
+      },
+      'work-stack': {
+        textAlign: '',
+        textDecoration: 'underline wavy',
+        fontSize: 22,
+        textUnderlineOffset: 5,
+        textDecorationColor: '#0000FF',
+        textDecorationThickness: 2,
+        marginTop: 3,
+        marginBottom: 4
       }
     }
   },
