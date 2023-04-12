@@ -79,7 +79,7 @@ const components = {
       'work-lang': {
         textAlign: '',
         textDecoration: 'underline wavy',
-        fontSize: 22,
+        fontSize: 20,
         textUnderlineOffset: 5,
         textDecorationColor: '#FF0000',
         textDecorationThickness: 2,
@@ -89,7 +89,7 @@ const components = {
       'work-stack': {
         textAlign: '',
         textDecoration: 'underline wavy',
-        fontSize: 22,
+        fontSize: 20,
         textUnderlineOffset: 5,
         textDecorationColor: '#0000FF',
         textDecorationThickness: 2,

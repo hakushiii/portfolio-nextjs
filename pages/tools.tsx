@@ -4,11 +4,11 @@ import Section from 'components/section'
 
 const Tools = () => {
     return(
-    <Box mx={300}>
+    <Container>
         <Head>
             <title>HKSH - Tools</title>
         </Head>
-        <Box>
+        <Container>
             <br /><br /><br />
             <Heading variant='tools-title'>
                 TOOLS THAT I USE
@@ -107,8 +107,8 @@ const Tools = () => {
                     </Section>
                 </Box>
             </Flex>
-        </Box>
-    </Box>
+        </Container>
+    </Container>
     )
 }
 export default Tools

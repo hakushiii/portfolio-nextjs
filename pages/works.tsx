@@ -1,10 +1,9 @@
-import { Box, Flex, Grid, GridItem, Image, Heading, Text, useColorModeValue, List, ListItem } from '@chakra-ui/react'
+import { Box, Container, Flex, Grid, GridItem, Image, Heading, Text, useColorModeValue, List, ListItem } from '@chakra-ui/react'
 import Head from 'next/head'
-import Section from 'components/section'
 
 const Works = () => {
     return(
-    <Box mx={300}>
+    <Container>
         <Head>
             <title>HKSH - Works</title>
         </Head>
@@ -25,7 +24,7 @@ const Works = () => {
                      <Grid templateColumns='repeat(2, 1fr)' px={100}>
                       <GridItem>
                         <Box mx={10} p={2} textAlign='center'>
-                            <Text variant='work-lang'>List of LANG used</Text>
+                            <Text variant='work-lang'>LANG used</Text>
                             <List>
                                 <ListItem><a href='https://python.org'>Python</a></ListItem>
                                 <ListItem><a href='https://javascript.com'>Javascript</a></ListItem>
@@ -34,7 +33,7 @@ const Works = () => {
                       </GridItem>
                       <GridItem>
                         <Box mx={10} p={2} textAlign='center'>
-                            <Text variant='work-stack'>List of TECH used</Text>
+                            <Text variant='work-stack'>TECH used</Text>
                             <List>
                                 <ListItem><a href='https://react.dev'>React</a></ListItem>
                                 <ListItem><a href='https://nodejs.org'>Node.js</a></ListItem>
@@ -50,7 +49,7 @@ const Works = () => {
                 </Box>    
             </Flex>
         </Box>
-    </Box>
+    </Container>
     )
 }
 export default Works
