@@ -56,18 +56,7 @@ const Tools = () => {
             </Box>
         </Flex>
         <Flex justifyContent='center'>
-            <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
-                <Section>
-                    <Image maxHeight={400} borderRadius='lg' 
-                           alt='8bitdo' 
-                           src='https://images.idgesg.net/images/article/2021/04/dsc07195_final-100886698-large.jpg'
-                           />
-                    <Heading variant='tools-item'>
-                        <a href='https://www.8bitdo.com/pro2/'>8Bitdo Pro 2 Controller</a>
-                    </Heading>
-                </Section>
-            </Box>
-            <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
+            <Box borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
                 <Section>
                     <Image maxHeight={400} borderRadius='lg'
                            alt='katos' 
@@ -75,33 +64,6 @@ const Tools = () => {
                            />
                     <Heading variant='tools-item'>
                         <a href='https://moondroplab.com/en/products/kato'>MoonDrop Kato</a>
-                    </Heading>
-                </Section>
-            </Box>
-        </Flex>
-        <Heading variant='tools-section'>
-            Accessories
-        </Heading>
-        <Flex justifyContent='center'>
-            <Box mr={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
-                <Section>
-                    <Image maxHeight={400} borderRadius='lg' 
-                           alt='UGREEN Hub' 
-                           src='https://cdn.shopify.com/s/files/1/0257/5246/9566/files/5640c170-182e-4eb8-9f84-172a95fa49e3.__CR0_0_970_600_PT0_SX970_V1.jpg?v=1658296590'
-                           />
-                    <Heading variant='tools-item'>
-                        <a href='https://www.ugreen.com/collections/usb-hub/products/6-in-1-usb-c-adapter-with-4k-hdmi?variant=39915659722814'>UGREEN 6-in-1 USB Hub</a>
-                    </Heading>
-                </Section>
-            </Box>
-            <Box ml={3} my={2} borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')}>  
-                <Section>
-                    <Image maxHeight={400} borderRadius='lg' 
-                           alt='yes, dont ask' 
-                           src='https://m.media-amazon.com/images/I/41agkgDaUJL._AC_UF894,1000_QL80_.jpg'
-                           />
-                    <Heading variant='tools-item'>
-                        <a href='https://www.amazon.ca/Wrong-Pick-Girls-Dungeon-Play/dp/B01LWMUULT'>Danmachi Playmat</a>
                     </Heading>
                 </Section>
             </Box>
