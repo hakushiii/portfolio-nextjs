@@ -40,39 +40,36 @@ const Plotter = () => {
 
     return(
     <Box mx={400}>
-        <Head>
-            <title>HKSH - Dynazenon</title>
-        </Head>
         <Heading variant='section-title'>
             <br /><br /><br /><br />
             Dynazenon
         </Heading>
-        <Box borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')} p={3} mb={6} textAlign='center'>  
+        <Box borderRadius='lg' bg={useColorModeValue('cyan.100', 'blackAlpha.300')} p={3} textAlign='center' mb={-2}>  
                 LIVE PLOTTING
-            </Box>
-            <Box borderRadius='md' bg={useColorModeValue('cyan.100', 'blackAlpha.300')} p={2}>
-                <ResponsiveContainer width='100%' height={500}>
-                <LineChart data={half}>
-                    <Line isAnimationActive={false} type='linear' dot={false} dataKey='Voltage' stroke="#E60002" yAxisId='left-axis'/>
-                    <Line isAnimationActive={false} type='linear' dot={false} dataKey='Current' stroke={useColorModeValue('#FFFE33', '#2C75FF')} yAxisId='right-axis'/>
-                    <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
-                    <XAxis dataKey='Time' />
-                    <YAxis label={{
-                        value: 'Voltage',
-                        angle: -90,
-                        position: 'outsideLeft',
-                        style: {fontSize: '20px'} 
-                    }} yAxisId='left-axis' />
-                    <YAxis label={{
-                        value: 'Current',
-                        angle: 90,
-                        position: 'outsideRight',
-                        style: {fontSize: '20px'} 
-                    }} yAxisId='right-axis' />
-                    <Tooltip />
-                </LineChart>
-                </ResponsiveContainer>
-            </Box>
+        </Box>
+        <Box bg={useColorModeValue('cyan.100', 'blackAlpha.300')} p={2}>
+            <ResponsiveContainer width='100%' height={500}>
+            <LineChart data={half}>
+                <Line isAnimationActive={false} type='linear' dot={false} dataKey='Voltage' stroke="#E60002" yAxisId='left-axis'/>
+                <Line isAnimationActive={false} type='linear' dot={false} dataKey='Current' stroke={useColorModeValue('#FFFE33', '#2C75FF')} yAxisId='right-axis'/>
+                <CartesianGrid stroke='#ccc' strokeDasharray='5 5' />
+                <XAxis dataKey='Time' />
+                <YAxis label={{
+                    value: 'Voltage',
+                    angle: -90,
+                    position: 'insideLeft',
+                    style: {fontSize: '20px'} 
+                }} yAxisId='left-axis' />
+                <YAxis label={{
+                    value: 'Current',
+                    angle: 90,
+                    position: 'insideRight',
+                    style: {fontSize: '20px'} 
+                }} yAxisId='right-axis' orientation='right'/>
+                <Tooltip />
+            </LineChart>
+            </ResponsiveContainer>
+        </Box>
     </Box>
     )
 }
