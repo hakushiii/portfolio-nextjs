@@ -36,9 +36,10 @@ const Page = () => {
         <Heading as='h3' variant='section-title'>
         WORK
         </Heading>
-        <p>
-          Haven't worked yet. Currently had University projects though.
-        </p>
+        <BioSection>
+          <BioYear>2024 - X</BioYear>
+          Programming Facilitator in TimeDoor Academy
+        </BioSection>
       </Section>
       <Section delay={0.5}>
         <Heading as='h3' variant='section-title'>
@@ -49,9 +50,10 @@ const Page = () => {
           Born in the PH Server
         </BioSection>
         <BioSection>
-          <BioYear>2019 - 20XX</BioYear>
-          Started University taking Bachelor of Science in Computer Engineering
+          <BioYear>2019 - 2024</BioYear>
+          Started and Finished University taking Bachelor of Science in Computer Engineering
         </BioSection>
+
       </Section>
       <Section delay={0.5}>
         <Heading variant='section-title'>
